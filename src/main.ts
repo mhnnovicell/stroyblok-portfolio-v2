@@ -35,6 +35,11 @@ app.component(
   defineAsyncComponent(() => import('./components/Feature.vue'))
 );
 
+app.component(
+  'Skills',
+  defineAsyncComponent(() => import('./components/Skills.vue'))
+);
+
 app.use(VueLazyLoad, {
   // options...
 });

@@ -39,8 +39,6 @@
 <style lang="scss">
 html,
 body {
-  height: 100vh;
-  width: 100vw;
   background: rgb(74, 12, 133);
   background: linear-gradient(
     45deg,
