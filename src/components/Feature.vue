@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" class="py-2">
+  <div v-editable="blok" class="py-2 text-white">
     <h1 class="text-lg">{{ blok?.name }}</h1>
   </div>
   <!-- Tjek Storyblok documentation mht foreach og lignende ting man tilføje for at gøre det nemmere at tilføje content osv -->

@@ -1,7 +1,11 @@
 <template>
   <Suspense>
     <template #default>
-      <Home />
+      <section class="body-font w-full h-full background-section">
+        <div class="container px-14 py-20 mx-auto w-full h-full">
+          <Home />
+        </div>
+      </section>
     </template>
 
     <template #fallback>
@@ -29,10 +33,35 @@
   </Suspense>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(30deg, #4a0c85 0%, #97258a 50%, #2bf4a1 100%);
+  animation: aurora 20s infinite;
+  background-size: 200%;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right top;
+  }
+  50% {
+    background-position: right bottom;
+  }
+  75% {
+    background-position: left bottom;
+  }
+  100% {
+    background-position: left top;
+  }
+}
+</style>
 
 <script setup lang="ts">
 import Home from './pages/Home.vue';
 </script>
-
-<script setup></script>
