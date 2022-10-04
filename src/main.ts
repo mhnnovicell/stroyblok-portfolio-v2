@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import { StoryblokVue, apiPlugin } from '@storyblok/vue';
+import { defineAsyncComponent } from 'vue';
 
 import App from './App.vue';
 import './index.css';
@@ -13,14 +14,24 @@ app.use(StoryblokVue, {
   use: [apiPlugin],
 });
 
-import Grid from './components/Grid.vue';
-import Page from './components/Page.vue';
-import Teaser from './components/Teaser.vue';
-import Feature from './components/Feature.vue';
+app.component(
+  'Grid',
+  defineAsyncComponent(() => import('./components/Grid.vue'))
+);
 
-app.component('Grid', Grid);
-app.component('Page', Page);
-app.component('Teaser', Teaser);
-app.component('Feature', Feature);
+app.component(
+  'Page',
+  defineAsyncComponent(() => import('./components/Page.vue'))
+);
+
+app.component(
+  'Teaser',
+  defineAsyncComponent(() => import('./components/Teaser.vue'))
+);
+
+app.component(
+  'Feature',
+  defineAsyncComponent(() => import('./components/Feature.vue'))
+);
 
 app.mount('#app');
