@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import { StoryblokVue, apiPlugin } from '@storyblok/vue';
 import { defineAsyncComponent } from 'vue';
+import VueLazyLoad from 'vue3-lazyload';
 
 import App from './App.vue';
 import './index.css';
@@ -33,5 +34,9 @@ app.component(
   'Feature',
   defineAsyncComponent(() => import('./components/Feature.vue'))
 );
+
+app.use(VueLazyLoad, {
+  // options...
+});
 
 app.mount('#app');

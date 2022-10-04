@@ -11,7 +11,8 @@
   "dependencies": {
     "@storyblok/vue": "^6.3.2",
     "flowbite": "^1.5.3",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue3-lazyload": "^0.3.6"
   },
   "devDependencies": {
     "@types/node": "^18.8.1",
