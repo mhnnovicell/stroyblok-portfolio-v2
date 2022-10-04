@@ -2,15 +2,18 @@
   <Suspense>
     <template #default>
       <section class="body-font w-full h-full background-section">
-        <div class="container px-14 py-20 mx-auto w-full h-full">
+        <div class="container px-14 py-24 mx-auto w-full h-full">
           <Home />
         </div>
       </section>
     </template>
 
     <template #fallback>
-      <div class="text-center">
-        <div role="status">
+      <div class="text-center h-screen w-screen">
+        <div
+          role="status"
+          class="h-screen w-screen flex justify-center items-center"
+        >
           <svg
             class="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
             viewBox="0 0 100 101"
@@ -38,7 +41,13 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(30deg, #4a0c85 0%, #97258a 50%, #2bf4a1 100%);
+  background: rgb(74, 12, 133);
+  background: linear-gradient(
+    45deg,
+    rgba(74, 12, 133, 1) 0%,
+    rgba(151, 37, 138, 1) 50%,
+    rgba(43, 244, 161, 1) 100%
+  );
   animation: aurora 20s infinite;
   background-size: 200%;
 }
