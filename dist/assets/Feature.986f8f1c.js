@@ -1,0 +1,1 @@
+import{d as a,w as o,o as c,c as i,g as n,t as r,a as l}from"./index.1e1f9264.js";const d={class:"py-2 text-white"},_={class:"text-lg"},h=a({__name:"Feature",props:{blok:Object},setup(e){return(m,p)=>{var t;const s=l("editable");return o((c(),i("div",d,[n("h1",_,r((t=e.blok)==null?void 0:t.name),1)])),[[s,e.blok]])}}});export{h as default};
