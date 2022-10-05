@@ -26,7 +26,6 @@
           :alt="blok?.image.filename"
         />
       </div>
-      <h2>Hello world 2 another one</h2>
     </div>
   </section>
 
