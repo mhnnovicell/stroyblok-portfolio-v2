@@ -61,22 +61,7 @@ jobs:
           # Force SSL encryption
           forceSsl: false
           # Local directory
-          localDir: dist
           # Remote directory
           remoteDir: storyblok.portfolio.v2
           
           name: Deploy via git-ftp
-
-
-   deploy:
-        needs: build_frontend_job
-        name: Deploy
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v1
-        - name: git-ftp push
-          uses: sebastianpopp/git-ftp-action@releases/v3
-          with:
-            url: "ftp://linux91.unoeuro.com"
-            user: mikkelraev.dk
-            password: mikkelhn1
