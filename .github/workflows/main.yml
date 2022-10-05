@@ -41,3 +41,4 @@ jobs:
           username: mikkelraev.dk
           password: mikkelhn1
           server-dir: storyblok.portfolio.v2/
+          local-dir: ./dist/
