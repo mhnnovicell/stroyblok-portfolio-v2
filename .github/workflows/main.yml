@@ -37,8 +37,8 @@ jobs:
       - name: 📂 Deploy files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: linux91.unoeuro.com
-          username: mikkelraev.dk
-          password: mikkelhn1
-          server-dir: storyblok.portfolio.v2/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_SERVER_DIRECTORY }}
           local-dir: ./dist/
