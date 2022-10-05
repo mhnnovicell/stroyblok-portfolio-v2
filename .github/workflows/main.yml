@@ -69,6 +69,7 @@ jobs:
 
 
    deploy:
+        needs: build_frontend_job
         name: Deploy
         runs-on: ubuntu-latest
         steps:
