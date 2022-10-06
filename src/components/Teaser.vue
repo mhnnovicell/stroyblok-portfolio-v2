@@ -24,6 +24,7 @@
           }"
           class="rounded-lg"
           :alt="blok?.image.filename"
+          rel="preload"
         />
       </div>
     </div>
