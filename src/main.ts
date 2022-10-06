@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import { StoryblokVue, apiPlugin } from '@storyblok/vue';
 import { defineAsyncComponent } from 'vue';
 import VueLazyLoad from 'vue3-lazyload';
+import { MotionPlugin } from '@vueuse/motion';
 
 import App from './App.vue';
 import './index.css';
@@ -43,5 +44,7 @@ app.component(
 app.use(VueLazyLoad, {
   // options...
 });
+
+app.use(MotionPlugin);
 
 app.mount('#app');
