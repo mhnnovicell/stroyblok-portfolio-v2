@@ -25,6 +25,8 @@
           class="rounded-lg"
           :alt="blok?.image.filename"
           rel="preload"
+          :width="blok?.image.width"
+          :height="blok?.image.height"
         />
       </div>
     </div>
