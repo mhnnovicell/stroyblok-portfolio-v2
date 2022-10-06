@@ -17,6 +17,14 @@
         </p>
       </div>
       <div class="lg:mt-0 lg:col-span-5 lg:flex drop-shadow-lg">
+        <link
+          rel="preload"
+          fetchpriority="high"
+          as="image"
+          :href="blok?.image.filename"
+          type="image/webp"
+        />
+
         <img
           v-lazy="{
             src: blok?.image.filename,
@@ -24,7 +32,6 @@
           }"
           class="rounded-lg"
           :alt="blok?.image.filename"
-          rel="preload"
           :width="blok?.image.width"
           :height="blok?.image.height"
         />
