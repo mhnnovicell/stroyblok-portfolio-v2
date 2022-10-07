@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ['Oswald', 'sans-serif'],
+      serif: ['Quattrocento', 'serif'],
+    },
   },
   plugins: [require('flowbite/plugin')],
 };
