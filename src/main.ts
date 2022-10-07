@@ -16,7 +16,8 @@ app.use(StoryblokVue, {
 });
 
 //Artikel om CDN og serving af static assets i Cloudfront, i stedet for gennem domænet - https://css-tricks.com/adding-cdn-caching-to-a-vite-build/
-
+//Se også denne https://www.aroundcode.io/host-react-vite-app-aws-s3-cloudfront/
+//disse to også https://github.com/marketplace/actions/s3-sync og https://github.com/marketplace/actions/s3-deploy
 app.component(
   'Grid',
   defineAsyncComponent(() => import('./components/Grid.vue'))
