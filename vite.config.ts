@@ -1,14 +1,18 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import mkcert from 'vite-plugin-mkcert';
-import { VitePWA } from 'vite-plugin-pwa';
+// import { VitePWA } from 'vite-plugin-pwa';
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: isProduction ? process.env.CLOUDFRONT_CDN_DOMAIN : '',
   plugins: [
     vue(),
     mkcert(),
     // VitePWA({
+    // base: "/",
     //   registerType: 'autoUpdate',
     //   devOptions: {
     //     enabled: true,

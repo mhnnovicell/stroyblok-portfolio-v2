@@ -1,6 +1,5 @@
-import { createApp } from 'vue';
+import { createApp, defineAsyncComponent } from 'vue';
 import { StoryblokVue, apiPlugin } from '@storyblok/vue';
-import { defineAsyncComponent } from 'vue';
 import VueLazyLoad from 'vue3-lazyload';
 import { MotionPlugin } from '@vueuse/motion';
 
@@ -15,6 +14,8 @@ app.use(StoryblokVue, {
   bridge: process.env.NODE_ENV !== 'production' ? true : false, // optimizes by excluding the bridge on production
   use: [apiPlugin],
 });
+
+//Artikel om CDN og serving af static assets i Cloudfront, i stedet for gennem domænet - https://css-tricks.com/adding-cdn-caching-to-a-vite-build/
 
 app.component(
   'Grid',
