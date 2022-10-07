@@ -42,3 +42,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_SERVER_DIRECTORY }}
           local-dir: ./dist/
+          
+      - name: S3 Deploy
+        uses: reggionick/s3-deploy@v3
+        with:
+           folder: dist
+           bucket: ${{ secrets.S3_BUCKET }}
+           bucket-region: S3_BUCKET_REGION
+           dist-id: ${{ secrets.CLOUDFRONT_DIST_ID }}
