@@ -20,6 +20,10 @@ jobs:
     if: github.event_name == 'push'
     name: Build frontend code
     runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      
     steps:
       - name: Code checkout
         uses: actions/checkout@v3
