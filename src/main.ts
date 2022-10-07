@@ -12,7 +12,7 @@ const app = createApp(App);
 
 app.use(StoryblokVue, {
   accessToken: 'a29ubFkrIbWWW8OC8GdKXAtt',
-  bridge: process.env.NODE_ENV !== 'production', // optimizes by excluding the bridge on production
+  bridge: process.env.NODE_ENV !== 'production' ? true : false, // optimizes by excluding the bridge on production
   use: [apiPlugin],
 });
 
