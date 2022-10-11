@@ -43,6 +43,11 @@ app.component(
   defineAsyncComponent(() => import('./components/Skills.vue'))
 );
 
+app.component(
+  'Education',
+  defineAsyncComponent(() => import('./components/Education.vue'))
+);
+
 app.use(VueLazyLoad, {
   // options...
 });

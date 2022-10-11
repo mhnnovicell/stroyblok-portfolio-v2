@@ -67,10 +67,16 @@
           {{ blok?.name }}
         </h1>
         <p
+          v-if="checkboxIsActive"
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
         >
-          From checkout to global sales tax compliance, companies around the
-          world use Flowbite to simplify their payment stack.
+          {{ blok?.designDescription }}
+        </p>
+        <p
+          v-else
+          class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+        >
+          {{ blok?.webDescription }}
         </p>
         <label
           for="large-toggle"
