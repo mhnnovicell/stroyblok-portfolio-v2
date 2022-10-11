@@ -4,7 +4,6 @@
       <section class="body-font w-full h-full background-section">
         <div class="container px-14 py-24 mx-auto w-full h-full">
           <Home />
-          test
         </div>
       </section>
     </template>

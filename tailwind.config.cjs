@@ -7,7 +7,16 @@ module.exports = {
     './node_modules/flowbite/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        purple: {
+          100: '#800080',
+        },
+        green: {
+          100: '#2bf4a1',
+        },
+      },
+    },
     fontFamily: {
       sans: ['Oswald', 'sans-serif'],
       serif: ['Quattrocento', 'serif'],
