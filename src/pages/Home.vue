@@ -4,7 +4,11 @@
 
 <script setup lang="ts">
 import { useStoryblok } from '@storyblok/vue';
-const story = await useStoryblok('home', { version: 'draft' });
+const story = await useStoryblok('home', {
+  version: 'draft',
+  fallback_lang: 'da',
+  language: 'da',
+});
 console.log(story, 'story');
 </script>
 
