@@ -5,7 +5,7 @@
     >
       <div
         class="mr-auto place-self-center lg:col-span-6 p-4 w-1/2"
-        data-aos="fade-left"
+        data-aos="fade-right"
       >
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
@@ -20,7 +20,7 @@
       </div>
       <div
         class="lg:mt-0 w-1/2 flex flex-row flex-wrap justify-start items-center mr-auto place-self-center p-16 ml-5"
-        data-aos="fade-right"
+        data-aos="fade-left"
       >
         <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
           <div class="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
