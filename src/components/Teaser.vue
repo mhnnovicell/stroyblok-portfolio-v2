@@ -36,9 +36,10 @@
             loading: 'https://via.placeholder.com/150',
           }"
           class="rounded-lg"
-          :alt="blok?.image.filename"
+          :alt="blok?.image.alt"
           :width="blok?.image.width"
           :height="blok?.image.height"
+          :title="blok?.image.title"
         />
       </div>
     </div>

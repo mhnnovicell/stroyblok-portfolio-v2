@@ -27,6 +27,7 @@
               }"
               :width="designSkillsImages.width"
               :height="designSkillsImages.height"
+              :title="designSkillsImages.title"
             />
           </div>
         </div>
@@ -53,6 +54,7 @@
               }"
               :width="webSkillsImages.width"
               :height="webSkillsImages.height"
+              :title="webSkillsImages.title"
             />
           </div>
         </div>
