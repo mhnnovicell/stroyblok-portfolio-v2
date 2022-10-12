@@ -12,7 +12,7 @@
           class="max-w-md flex flex-row flex-wrap justify-start items-center"
         >
           <div
-            class="w-auto h-auto p-2 mr-2 my-3 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-center items-center"
+            class="w-auto h-auto p-2 mr-2 my-3 bg-indigo-900 rounded-lg border border-indigo-900 shadow-md flex flex-col justify-center items-center"
             v-for="(
               designSkillsImages, designSkillImagesIdx
             ) in blok?.designSkillImages"
