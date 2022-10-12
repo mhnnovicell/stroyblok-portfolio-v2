@@ -5,7 +5,7 @@
     >
       <div
         class="mr-auto place-self-center lg:col-span-7 p-4"
-        v-motion-slide-visible-left
+        data-aos="fade-right"
       >
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
@@ -20,7 +20,7 @@
       </div>
       <div
         class="lg:mt-0 lg:col-span-5 lg:flex drop-shadow-lg"
-        v-motion-slide-visible-right
+        data-aos="fade-left"
       >
         <link
           rel="preload"

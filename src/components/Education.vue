@@ -5,7 +5,7 @@
     >
       <div
         class="mr-auto place-self-center lg:col-span-6 w-2/4 p-16 ml-5"
-        v-motion-slide-visible-left
+        data-aos="fade-left"
       >
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"

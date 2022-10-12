@@ -5,7 +5,7 @@
     >
       <div
         class="lg:mt-0 w-1/2 flex flex-row flex-wrap justify-start items-center pl-5 mr-auto place-self-center"
-        v-motion-slide-visible-right
+        data-aos="fade-right"
         v-if="checkboxIsActive"
       >
         <div
@@ -33,7 +33,7 @@
       </div>
       <div
         class="lg:mt-0 w-1/2 flex flex-row flex-wrap justify-start items-center pl-5 mr-auto place-self-center"
-        v-motion-slide-visible-right
+        data-aos="fade-right"
         v-else
       >
         <div
@@ -59,7 +59,7 @@
       </div>
       <div
         class="mr-auto place-self-center lg:col-span-6 w-2/4 p-16 ml-5"
-        v-motion-slide-visible-left
+        data-aos="fade-left"
       >
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
@@ -67,12 +67,14 @@
           {{ blok?.name }}
         </h1>
         <p
+          data-aos="fade"
           v-if="checkboxIsActive"
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
         >
           {{ blok?.designDescription }}
         </p>
         <p
+          data-aos="fade"
           v-else
           class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
         >
@@ -93,11 +95,17 @@
           ></div>
 
           <span
+            data-aos="fade"
             v-if="checkboxIsActive"
             class="ml-3 text-sm font-medium text-white"
             >Design</span
           >
-          <span v-else class="ml-3 text-sm font-medium text-white">Web</span>
+          <span
+            v-else
+            class="ml-3 text-sm font-medium text-white"
+            data-aos="fade"
+            >Web</span
+          >
         </label>
       </div>
     </div>
