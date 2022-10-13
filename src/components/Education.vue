@@ -38,7 +38,8 @@
                   <div class="flex justify-start w-full mx-auto items-center">
                     <div class="w-full sm:w-1/2 sm:pr-8">
                       <div class="p-4 bg-white rounded shadow">
-                        Now this is a story all about how,
+                        <h2>{{ blok?.nozebraGraduateHeadline }}</h2>
+                        <p>{{ blok?.nozebraGraduateDescription }}</p>
                       </div>
                     </div>
                   </div>
