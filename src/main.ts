@@ -53,6 +53,11 @@ app.component(
   defineAsyncComponent(() => import('./components/Education.vue'))
 );
 
+app.component(
+  'Projects',
+  defineAsyncComponent(() => import('./components/Projects.vue'))
+);
+
 app.use(VueLazyLoad, {
   // options...
 });
