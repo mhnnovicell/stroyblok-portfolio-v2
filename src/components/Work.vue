@@ -1,10 +1,10 @@
 <template>
   <section v-editable="blok">
     <div
-      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 grid-cols-12 md:flex-row flex-col"
     >
       <div
-        class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+        class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 grid-cols-12 order-2 md:order-1"
         data-aos="fade-left"
       >
         <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
@@ -327,7 +327,7 @@
         </div>
       </div>
       <div
-        class="mr-auto place-self-center lg:col-span-6 w-2/4 p-16 ml-5"
+        class="mr-auto place-self-center lg:col-span-6 col-span-12 md:w-2/4 md:p-16 md:ml-5 w-full order-1 md:order-2"
         data-aos="fade-right"
       >
         <h1
