@@ -1,10 +1,10 @@
 <template>
   <section v-editable="blok">
     <div
-      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 flex-col md:flex-row"
     >
       <div
-        class="lg:mt-0 w-1/2 flex flex-row flex-wrap justify-start items-center pl-5 mr-auto place-self-center"
+        class="lg:mt-0 md:w-1/2 mt-4 md:mt-0 w-full flex flex-row flex-wrap justify-start items-center md:pl-5 mr-auto place-self-center order-2 md:order-1"
         data-aos="fade-right"
         v-if="checkboxIsActive"
       >
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div
-        class="lg:mt-0 w-1/2 flex flex-row flex-wrap justify-start items-center pl-5 mr-auto place-self-center"
+        class="lg:mt-0 md:w-1/2 mt-4 md:mt-0 w-full flex flex-row flex-wrap justify-start items-center md:pl-5 mr-auto place-self-center order-2 md:order-1"
         data-aos="fade-right"
         v-else
       >
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div
-        class="mr-auto place-self-center lg:col-span-6 w-2/4 p-16 ml-5"
+        class="mr-auto place-self-center col-span-12 lg:col-span-6 md:w-2/4 w-full md:p-16 md:ml-5 order-1 md:order-2"
         data-aos="fade-left"
       >
         <h1
