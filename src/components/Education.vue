@@ -1,10 +1,10 @@
 <template>
   <section v-editable="blok">
     <div
-      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 grid-cols-12 md:flex-row flex-col"
+      class="flex max-w-screen-xl md:px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 grid-cols-12 md:flex-row flex-col"
     >
       <div
-        class="mr-auto place-self-center lg:col-span-6 col-span-12 p-4 md:w-1/2 w-full"
+        class="mr-auto place-self-center lg:col-span-6 col-span-12 md:p-4 md:w-1/2 w-full"
         data-aos="fade-right"
       >
         <h1
@@ -22,8 +22,10 @@
         class="lg:mt-0 md:w-1/2 w-full flex flex-row flex-wrap justify-start items-center mr-auto place-self-center md:p-16 md:ml-5"
         data-aos="fade-left"
       >
-        <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
-          <div class="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
+        <div
+          class="md:min-h-screen md:py-6 flex flex-col justify-center sm:py-12"
+        >
+          <div class="md:py-3 sm:max-w-xl sm:mx-auto w-full md:px-2">
             <div class="relative antialiased text-sm">
               <!-- Vertical bar running through middle -->
               <div

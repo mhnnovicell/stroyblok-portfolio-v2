@@ -1,7 +1,7 @@
 <template>
   <section v-editable="blok">
     <div
-      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 grid-cols-12 flex-col md:flex-row"
+      class="flex max-w-screen-xl md:px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 grid-cols-12 flex-col md:flex-row"
     >
       <div
         class="mr-auto place-self-center lg:col-span-7 p-4 col-span-12"
@@ -35,7 +35,7 @@
             src: blok?.image.filename,
             loading: 'https://via.placeholder.com/150',
           }"
-          class="rounded-lg"
+          class="rounded-lg border-8 border-indigo-900"
           :alt="blok?.image.alt"
           :width="blok?.image.width"
           :height="blok?.image.height"

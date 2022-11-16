@@ -1,7 +1,7 @@
 <template>
   <section v-editable="blok">
     <div
-      class="flex max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 flex-col md:flex-row"
+      class="flex max-w-screen-xl md:px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 flex-col md:flex-row"
     >
       <div
         class="lg:mt-0 md:w-1/2 mt-4 md:mt-0 w-full flex flex-row flex-wrap justify-start items-center md:pl-5 mr-auto place-self-center order-2 md:order-1"
