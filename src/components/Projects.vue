@@ -27,18 +27,16 @@
           <div
             class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 p-4 m-8"
           >
-            <img
+            <!-- <img
               :alt="blok?.veganSearchImage.alt"
               :height="blok?.veganSearchImage.height"
               :width="blok?.veganSearchImage.width"
               class="w-32 h-32"
               v-lazy="{
-                src: blok?.veganSearchImage.filename,
+                src: require(blok?.veganSearchImage.filename),
                 loading: 'https://via.placeholder.com/150',
               }"
-            />
-
-            {{ blok?.veganSearchImage.filename }}
+            /> -->
 
             <div class="p-5">
               <h5
@@ -74,16 +72,16 @@
           <div
             class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 p-4 m-8"
           >
-            <img
+            <!-- <img
               :alt="blok?.kurtNImage.alt"
               :height="blok?.kurtNImage.height"
               :width="blok?.kurtNImage.width"
               class="w-32 h-32"
               v-lazy="{
-                src: blok?.kurtNImage.filename,
+                src: require(blok?.kurtNImage.filename),
                 loading: 'https://via.placeholder.com/150',
               }"
-            />
+            /> -->
 
             <div class="p-5">
               <h5
@@ -119,7 +117,7 @@
           <div
             class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-8"
           >
-            <img
+            <!-- <img
               :alt="blok?.veganSearchImage.alt"
               :height="blok?.veganSearchImage.height"
               :width="blok?.veganSearchImage.width"
@@ -128,7 +126,7 @@
                 src: blok?.veganSearchImage.filename,
                 loading: 'https://via.placeholder.com/150',
               }"
-            />
+            /> -->
 
             {{ blok?.veganSearchImage.filename }}
 
@@ -166,6 +164,13 @@
         </Vue3Marquee>
       </div>
     </div>
+    <img
+      :src="blok?.kurtNImage.filename"
+      class="w-full h-full"
+      :alt="blok?.kurtNImage.alt"
+      :height="blok?.kurtNImage.height"
+      :width="blok?.kurtNImage.width"
+    />
   </section>
   <!-- Tjek Storyblok documentation mht foreach og lignende ting man tilføje for at gøre det nemmere at tilføje content osv -->
   <!-- Alternativt se den her video: https://www.youtube.com/watch?v=viV0ROCVEO8 https://www.youtube.com/watch?v=zVISvGMz6xc&t=189s -->
