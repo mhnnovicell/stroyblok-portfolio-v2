@@ -24,7 +24,9 @@
         data-aos="fade-left"
       >
         <Vue3Marquee :pauseOnHover="true">
-          <div class="max-w-sm bg-indigo-900 rounded-lg shadow p-4 m-8">
+          <div
+            class="max-w-sm bg-indigo-900 rounded-lg shadow p-4 m-8 cursor-pointer"
+          >
             <img
               :alt="blok?.kurtNImage.alt"
               :height="blok?.kurtNImage.height"
@@ -32,7 +34,6 @@
               class="h-auto w-1/2 rounded-t-lg object-contain mix-blend-multiply m-auto"
               v-lazy="{
                 src: blok?.kurtNImage.filename,
-                loading: 'https://via.placeholder.com/150',
               }"
             />
 
@@ -65,7 +66,51 @@
               </a>
             </div>
           </div>
-          <div class="max-w-sm bg-indigo-900 rounded-lg shadow p-4 m-8">
+          <div
+            class="max-w-sm bg-indigo-900 rounded-lg shadow p-4 m-8 cursor-pointer"
+          >
+            <img
+              :alt="blok?.asientoImage.alt"
+              :height="blok?.asientoImage.height"
+              :width="blok?.asientoImage.width"
+              class="h-auto w-1/2 rounded-t-lg object-contain mix-blend-multiply m-auto"
+              v-lazy="{
+                src: blok?.asientoImage.filename,
+              }"
+            />
+
+            <div class="p-5">
+              <h5 class="text-white mb-2 text-lg font-bold">
+                {{ blok?.asientoHeadline }}
+              </h5>
+              <p class="mb-3 font-light text-gray-400">
+                {{ blok?.asientoDescription }}
+              </p>
+              <a
+                :href="blok?.asientoLink.url"
+                target="_blank"
+                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-green-100 rounded-lg hover:bg-green-100 focus:ring-4 focus:outline-none focus:ring-green-100"
+              >
+                Se siden
+                <svg
+                  aria-hidden="true"
+                  class="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-indigo-900 rounded-lg shadow p-4 m-8 cursor-pointer"
+          >
             <img
               :alt="blok?.veganSearchImage.alt"
               :height="blok?.veganSearchImage.height"
@@ -73,7 +118,6 @@
               class="h-auto w-1/2 rounded-t-lg object-contain mix-blend-multiply m-auto"
               v-lazy="{
                 src: blok?.veganSearchImage.filename,
-                loading: 'https://via.placeholder.com/150',
               }"
             />
 
@@ -86,6 +130,48 @@
               </p>
               <a
                 :href="blok?.veganSearchLink.url"
+                target="_blank"
+                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-green-100 rounded-lg hover:bg-green-100 focus:ring-4 focus:outline-none focus:ring-green-100"
+              >
+                Se siden
+                <svg
+                  aria-hidden="true"
+                  class="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-indigo-900 rounded-lg shadow p-4 m-8 cursor-pointer"
+          >
+            <img
+              :alt="blok?.beeroclockImage.alt"
+              :height="blok?.beeroclockImage.height"
+              :width="blok?.beeroclockImage.width"
+              class="h-auto w-1/2 rounded-t-lg object-contain mix-blend-multiply m-auto"
+              v-lazy="{
+                src: blok?.beeroclockImage.filename,
+              }"
+            />
+
+            <div class="p-5">
+              <h5 class="text-white mb-2 text-lg font-bold">
+                {{ blok?.beeroclockHeadline }}
+              </h5>
+              <p class="mb-3 font-light text-gray-400">
+                {{ blok?.beeroclockDescription }}
+              </p>
+              <a
+                :href="blok?.beeroclockLink.url"
                 target="_blank"
                 class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-green-100 rounded-lg hover:bg-green-100 focus:ring-4 focus:outline-none focus:ring-green-100"
               >
