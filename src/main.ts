@@ -58,6 +58,11 @@ app.component(
   defineAsyncComponent(() => import('./components/Projects.vue'))
 );
 
+app.component(
+  'Testimonials',
+  defineAsyncComponent(() => import('./components/Testimonials.vue'))
+);
+
 app.use(VueLazyLoad, {
   // options...
 });
